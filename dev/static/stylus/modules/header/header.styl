@@ -1,0 +1,55 @@
+.header
+    display flex
+    flex-direction row
+    padding 20px 42px 0
+    &-wrapper
+        max-width 1024px
+        width 100%
+    &__item
+        display flex
+        flex-direction column
+        flex 1
+        padding-left 30px
+    &__row
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+        &:not(:first-child)
+            margin-top 25px
+    .menu
+        display flex
+        flex-direction row
+        &__item
+            &:not(:first-child)
+                margin-left 40px
+            &:hover a
+                color rgb(252,125,117)
+            &.active a
+                color rgb(252,125,117)
+                border-bottom 3px solid rgb(252,125,117)
+    a:hover
+        color rgb(252,125,117)
+        
+.search
+    position relative
+    min-width 270px
+    background-color rgb(255,255,255)
+    border none
+    border-radius 22px
+    padding 12px 52px 12px 16px
+    &_icon
+        &-wrapper
+            position absolute
+            top 4px
+            right 8px
+            display flex
+            flex-direction row
+            justify-content center
+            align-items center
+            border-radius 50%
+            width 30px
+            height 30px
+            background-color rgb(153,204,204)
+    &-wrapper
+        position relative
